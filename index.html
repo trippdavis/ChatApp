@@ -3,8 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>ChatApp</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-
+    <div id="chat">
+      <div id="chatter-select">
+        <div class="chatter-select selected" data-id="1">Chatter 1</div>
+        <div class="chatter-select not-selected" data-id="2">Chatter 2</div>
+      </div>
+      <div id="comments">
+        <div class="comment">
+          <div class="comment-out">Yo</div>
+        </div>
+        <div class="comment">
+          <div class="comment-in">Hey man, whats up?</div>
+        </div>
+        <div class="comment">
+          <div class="comment-out">Not a whole lot, what is going on with you?</div>
+        </div>
+      </div>
+      <textarea id="make-comment"></textarea>
+      <button class="submit">Send</button>
+    </div>
+    <script src="code.js"></script>
   </body>
 </html>
